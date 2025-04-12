@@ -2,6 +2,8 @@
 
 [Blog post: How to publish an eBook in 60 minutes](https://www.s-anand.net/blog/how-to-publish-an-ebook-in-60-minutes/)
 
+<!-- Book link: https://kdp.amazon.com/en_US/bookshelf?publishedId=A1IVDRWYI3N6JQ -->
+
 I published an eBook on Amazon. It takes about an hour if you have the content ready.
 
 **STEP 1** (10 min): [Set up a Kindle Direct Publishing account](https://account.kdp.amazon.com/) with your address, bank details, and tax information.
@@ -15,7 +17,7 @@ I published an eBook on Amazon. It takes about an hour if you have the content r
 **STEP 4** (15 min): Convert it to an ePub using [pandoc](https://pandoc.org/).
 
 ```bash
-pandoc \*.md -o book.epub --toc \\
+pandoc \*.md -o an-lbs-exchange-program.epub --toc \\
   --metadata title="An LBS Exchange Program" \\
   --metadata author="Anand S" \\
   --metadata language=en \\
@@ -26,7 +28,7 @@ pandoc \*.md -o book.epub --toc \\
 
 > Draw a comic-style book cover page that covers the experiences of an Indian exchange student (picture attached) from IIM Bangalore at London Business School and exploring London. The book title is "An LBS Exchange Program".
 
-![](cover.webp)
+[![](cover.webp)](https://www.amazon.in/dp/B0F3D55R2Z/)
 
 **STEP 6** (10 min): [Publish the book on KDP](https://kdp.amazon.com/). It's priced at $0.99 / ₹49 because Kindle doesn't allow free downloads.
 
@@ -36,4 +38,4 @@ The three things that made publishing in 1 hour possible are:
 2. Open-source tooling ([WordPress](https://wordpress.org/), [Markdown](https://en.wikipedia.org/wiki/Markdown), [ePub](https://en.wikipedia.org/wiki/EPUB), [pandoc](https://pandoc.org/)) has built a big part of the infrastructure.
 3. LLMs make the rest ([figuring out the steps](https://chatgpt.com/share/67ea8da7-7f90-800c-a89c-6f087e893749), generating the cover) very easy.
 
-(The book is currently under review and will be published in 72 hours, by 2 Apr 2025.)
+Here's the book link on Amazon: https://www.amazon.in/dp/B0F3D55R2Z/ -- or read it from this repo: [an-lbs-exchange-program.epub](an-lbs-exchange-program.epub).
